@@ -1,0 +1,199 @@
+.email-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.email-content {
+  padding: 2rem;
+}
+
+.email-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.email-logo {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.email-header h2 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+.prize-notification {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.prize-notification h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.win-message {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.prize-box {
+  margin: 1.5rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  color: white;
+  max-width: 500px;
+}
+
+.prize-box h4 {
+  font-size: 1.8rem;
+  margin: 0 0 1rem 0;
+}
+
+.prize-box p {
+  font-size: 1.1rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.prize-details {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-row span:first-child {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.terms-conditions {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #fff3cd;
+  border-radius: 8px;
+}
+
+.terms-conditions h4 {
+  color: #856404;
+  margin-top: 0;
+}
+
+.terms-conditions ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.terms-conditions li {
+  color: #856404;
+  margin: 0.5rem 0;
+}
+
+.contact-info {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  color: #2c3e50;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 2px solid #f0f0f0;
+}
+
+.footer p {
+  color: #2c3e50;
+  margin: 0.5rem 0;
+}
+
+.footer small {
+  color: #666;
+}
+
+.email-actions {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #eee;
+  text-align: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.print-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.print-button:hover {
+  background-color: #45a049;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  
+  .email-container,
+  .email-container * {
+    visibility: visible;
+  }
+  
+  .email-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+  
+  .email-actions {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .email-content {
+    padding: 1rem;
+  }
+  
+  .prize-box {
+    padding: 1.5rem;
+  }
+  
+  .prize-box h4 {
+    font-size: 1.5rem;
+  }
+}

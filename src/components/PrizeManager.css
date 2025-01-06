@@ -1,0 +1,199 @@
+.prize-manager {
+  padding: 20px;
+}
+
+.prize-manager-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.add-button, .reset-button, .update-wheel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.add-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.reset-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.update-wheel-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.prizes-list {
+  display: grid;
+  gap: 15px;
+}
+
+.prize-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.prize-item.inactive {
+  opacity: 0.6;
+}
+
+.prize-content {
+  flex: 1;
+}
+
+.prize-content h4 {
+  margin: 0 0 5px 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.prize-content p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.prize-content small {
+  display: block;
+  margin-top: 5px;
+  color: #888;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.prize-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.prize-actions button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.edit-button {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.deactivate-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.activate-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-group button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button-group button[type="button"] {
+  background-color: #6c757d;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .prize-item {
+    flex-direction: column;
+  }
+  
+  .prize-actions {
+    margin-top: 15px;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
